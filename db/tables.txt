@@ -1,0 +1,23 @@
+Table 1: categories (contains Perk-a-Colas and Gobblegums)
+id (pk) perk-a-cola is 1, gum is 2
+name (VARCHAR) 
+
+Table 2: perk-a-colas
+id (pk)
+category_id (Foreign Key REFERENCES categories(id)) 1
+name (VARCHAR, UNIQUE, NOT NULL) 
+cost (INT, CHECK > 0) 
+color (VARCHAR, NOT NULL) liquid color or machine color or color associated with perk
+quantity (INT, NOT NULL CHECK >= 0)
+icon_url (VARCHAR) path perk icon image
+flavor (VARCHAR) optional flavor text
+jingle (VARCHAR) path to jingle mp3 file
+
+Table 2: gobblegums
+id (pk)
+category_id (Foreign Key REFERENCES categories(id)) 2
+name (VARCHAR, UNIQUE, NOT NULL) 
+rarity (VARCHAR, NOT NULL) Normal, Mega, Rare Mega, Ultra, Whimsical
+color (VARCHAR, NOT NULL) gobblegum color denotes activation not rarity
+quantity (INT, NOT NULL, CHECK >= 0)
+icon_url (VARCHAR) path gum icon image
