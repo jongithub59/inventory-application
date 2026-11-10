@@ -1,0 +1,65 @@
+:root {
+  font-family: "Retail Demo", Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  background-color: var(--primary);
+  /* color: var(--accent); */
+
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --primary: ;
+  --secondary: ;
+  --accent: ;
+  --border: ;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  padding-top: 2em;
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: center;
+}
+
+header a,
+.categories-container a {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+header a:visited,
+.categories-container a {
+  color: inherit;
+}
+
+.categories-container {
+  padding-top: 2em;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  min-width: 750px;
+  max-width: 60vw;
+}
+
+.categories-container li {
+  list-style-type: none;
+  margin: 0 20px;
+}
