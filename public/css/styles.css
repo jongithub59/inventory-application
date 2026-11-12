@@ -38,20 +38,23 @@ header {
 }
 
 header a,
-.categories-container a {
+.container a {
   text-decoration: none;
   list-style-type: none;
 }
 
 header a:visited,
-.categories-container a {
+.container a {
   color: inherit;
 }
 
-.categories-container {
+.product-container {
+  flex-direction: column;
+}
+
+.container {
   padding-top: 2em;
   display: flex;
-  /* flex-direction: column; */
   align-items: center;
   justify-content: center;
   margin: auto;
@@ -59,7 +62,56 @@ header a:visited,
   max-width: 60vw;
 }
 
-.categories-container li {
-  list-style-type: none;
-  margin: 0 20px;
+.container a {
+  margin: 10px;
+}
+
+h2 {
+  text-align: center;
+  margin: 10px;
+}
+
+.product-header {
+  border-bottom: 2px solid grey;
+}
+
+.product,
+.product-header {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+  width: 80%;
+}
+
+.product {
+  border-bottom: 1px solid grey;
+  margin: 10px;
+  padding: 10px 0 20px 0;
+}
+
+.product p,
+.product-header h3 {
+  text-align: center;
+}
+
+.create-container {
+  padding-top: 6px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input {
+  display: block;
+  width: 100%;
+  /* margin: 10px 0; */
+  padding: 8px;
+  color: #121212;
+}
+
+label {
+  display: block;
+  margin-top: 24px;
 }

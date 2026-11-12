@@ -13,7 +13,9 @@ router.get("/gobblegums/:id", inventoryController.inventory_details);
 
 router.get("/all", inventoryController.inventory_all);
 
-router.get("/new-product", inventoryController.inventory_new);
+router.get("/new-product", inventoryController.inventory_new_perk);
+router.get("/new-gum", inventoryController.inventory_new_gum);
+
 router.post("/new-product", inventoryController.inventory_new_post);
 
 module.exports = router;

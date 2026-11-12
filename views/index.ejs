@@ -1,22 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dr. Monty's Factory</title>
-    <link rel="stylesheet" href="/css/styles.css" />
-  </head>
-  <body>
-    <header class="main-header">
-      <a href="/"><h1>Dr. Monty's Factory</h1></a>
-    </header>
-    <main class="main-content">
+  <%- include('./partials/head.ejs') %>
+    <main class="main-content content">
       <header class="content-header"><h2>Categories</h2></header>
-      <ul class="categories-container">
-        <a href="/inventory_perk_a_colas"><li>Perk-a-Colas</li></a>
-        <a href="inventory_gobblegums"><li>Gobblegums</li></a>
-        <a href="inventory_all"><li>All Products</li></a>
+      <ul class="categories-container container">
+        <a href="perk-a-colas"><li>Perk-a-Colas</li></a>
+        <a href="gobblegums"><li>Gobblegums</li></a>
+        <a href="all"><li>All Products</li></a>
       </ul>
+      <a href="new-gum"><h2>Add Gobblegum</h2></a>
     </main>
   </body>
 </html>
